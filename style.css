@@ -1,3 +1,39 @@
+/* header */
+.title{
+	text-align: center;
+	font-size: 38px;
+	font-weight: bold;
+	font-family: Times New Roman;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+header .nav-link{
+	color: black;
+}
+
+header .nav-link, header .nav-item span{
+	padding: 0 35px 0 35px;
+	text-align: center
+}
+
+header .nav-link{
+	font-size: 22px;
+	text-align: center;
+	color: black;
+	margin-top: 0;
+}
+
+.nav-item span{
+	font-size: 14px;
+}
+
+
+/* header ここまで*/
+
+main{
+	margin-top: 20px;
+}
 .img_panel{
 	padding:0;
 	height: 250px;
