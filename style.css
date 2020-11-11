@@ -14,3 +14,19 @@
 	font-family:Times New Roman;
 	color:#fffffc;
 }
+.nav-link{
+	color: #c8c2c6;	
+	font-family:Times New Roman;
+	font-size: 20px;
+	margin-top: 20px;
+}
+.footer-copyright{
+	color: #c8c2c6;
+	font-family:Times New Roman;	
+	font-size: 12px;
+}
+.v_line_left {
+  border-left: thin solid;
+  color:#c8c2c6;
+  padding-left: 20px;
+}
