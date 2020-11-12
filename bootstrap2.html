@@ -72,8 +72,40 @@
         <div class="col-4" style="background-color: #74325c"><h3>instagram</h3><br><h6>オフィシャルページ</h6><div class="text-right"><i class="fab fa-instagram"></i></div></div>
         <div class="col-5" style="background-color: #19448e"><h3>Facebook</h3><br><h6>オフィシャルページ</h6><div class="text-right"><i class="fab fa-facebook-f"></i></div></div>
         <div class="col-3" style="background-color: #383c3c"><h3>YouTube</h3><br><h6>オフィシャルページ</h6><div class="text-right"><i class="fab fa-youtube"></i></div></div>
+      
+      
+      
+      
+      
+      <!-- webAPI部分　YouTube動画挿入 （予定）-->
+      </div>
+      <div class="row">
+        <div class="col-4" style="background-color: #74325c"><h3>instagram</h3><br><h6>オフィシャルページ</h6><div class="text-right"><i class="fab fa-instagram"></i></div></div>
+        <div class="col-4">
+        <div id="youtubeList"></div>
+
+      <script>
+      $.ajax({
+        type: 'GET',
+        url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCMgVtQee9z66477c7a3G2wQ&maxResults=5&order=date&type=video&key=AIzaSyAKF8UHqsi9PKJ9aaEm8WMyZblJETnHYpU',
+        datatype: 'json',
+        success: function(json){
+          num = json.items.length;
+          for(var i = 0; i < num ; i++){
+              var ID = json.items[i].id.videoId;
+              $("#youtubeList").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/' + ID + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+          }
+        },
+        error: function(){
+          alert('error');
+        }
+      });
+      </script>
+      </div>
       </div>
     </main>
+
+      <!-- アカウント部分 -->
     <footer>
       <div class="row">
         <div class="col-12" style="background-color: grey">
