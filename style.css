@@ -1,4 +1,5 @@
 /* header */
+
 .title{
 	text-align: center;
 	font-size: 38px;
@@ -94,4 +95,23 @@ main{
 	color:#c8c2c6;
 	margin-top: 30px;
 
+}
+
+.bg-color{
+	background-color: grey;
+}
+
+.padding{
+	margin-top: 0;
+	padding: 30px;
+}
+
+.footer-border-right{
+	border-right: 1px solid white;
+}
+
+#result{
+	height: 200px;
+	padding-top: 30px;
+	margin-bottom: 0;
 }
