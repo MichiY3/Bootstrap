@@ -111,7 +111,9 @@ main{
 }
 
 #result{
-	height: 200px;
-	padding-top: 30px;
+	/* height: 200px; */
+	/* padding-top: 30px; */
 	margin-bottom: 0;
+	padding:0px;
+	background-color: #383c3c;
 }
