@@ -72,9 +72,18 @@ main{
 	font-family:Times New Roman;	
 	font-size: 12px;
 }
+.txt{
+	color:#dcd6d9;
+	font-size: 20px;
+	font-family: Times New Roman,Droid Sans Japanese;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .col-12{
 	padding-left:none;
 }
+
 .v_line_left {
   border-left: thin solid;
   color:#c8c2c6;
