@@ -6,8 +6,10 @@ $(function(){
 		let key = 'AIzaSyC6EGYS9QYaJ8J_Gd9pDTp1hyw_wc64H_s';
 		let part = '&part=snippet&maxResults=1';
 		// let id = '&id=UC6vH90E1cc-e1IC1_Zb5T5A';
-		let q = '&q=邦楽';
+		// let q = '&q=邦楽';
+		let q ='&q=PGCDOFFICIAL'
 		let type = '&type=video';
+		// let channelId ='&channelID=PGCDOFFICIAL'
 		url = url + key + part + q + type;
 
 		$.ajax({
