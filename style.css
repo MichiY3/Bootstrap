@@ -37,7 +37,7 @@ main{
 }
 .img_panel{
 	padding:0;
-	height: 250px;
+	height: 270px !important;
 }
 
 .yoko_pic{
@@ -80,6 +80,10 @@ main{
 	align-items: center;
 	justify-content: center;
 }
+.youtube{
+	display:fullscreen;
+}
+
 .col-12{
 	padding-left:none;
 }
@@ -139,3 +143,45 @@ main{
 .bg-color .container-fuluid{
 	margin-top: 200px;
 }
+
+/*レスポンシブ対応　異なるサイズのデバイスで見やすくなる対応*/
+
+
+
+/* タブレット*/
+@media (max-width: 960px){
+	body{
+		min-width:850px;
+	}
+	.img_panel{
+		padding:0;
+		height: 170px !important;
+	}
+	.youtube{
+		height:100%;
+	}
+	}
+
+
+/*スマートフォン*/
+@media screen and (max-width: 480px){
+	body{
+		min-width:375px;
+		max-width: 480px;
+	}
+
+}
+	.img_panel{
+		padding:0;
+		height: 150px;
+}
+	.sns h3{
+		margin-top: 30px;
+}
+	.sns h6{
+		display: none;
+}
+	.youtube{
+		height:100%;
+	}
+} 
